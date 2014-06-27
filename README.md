@@ -13,6 +13,7 @@ To build a sentiment lexicon we do next steps:
 
 2) execute the normalization of tweets: convert all words to lowercase and transform all triples of identical symbols to deuces.
 So the words like "Goooooddddd" and "goooodd" will be represented by one word "goodd".
+
 3) use Twitter POS Tagger (http://www.ark.cs.cmu.edu/TweetNLP) to retieve from training tweets only nouns, adjectives, verbs, advers, interjections, abbreviations and smiles. The word combinations like "adjective-noun" and "adverb-adjective" are considered as phrases. 
 
 4) create a matrix of cooccurrences for the words/phrases from training tweets with window size T = 6. This matrix is kept as an Hbase table.
@@ -24,7 +25,7 @@ This table represents our graph of phrases. Its structure is such:
   
   word_1        word_1:cos_sim_11 ... word_n:cos_sim_n1
   
-  ..................................................
+  ..............................................................
   
   word_n        word_n:cos_sim_n1 ... word_n:cos_sim_nn
   
