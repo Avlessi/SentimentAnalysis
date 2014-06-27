@@ -32,9 +32,9 @@ i.e. cosine similarity between phrases.
 
 6) remove edges with low weights.
 
-7) execute the algorithm of sentiment propagation which propagates sentiment scores from seed nodes (which are positive and negative emoticons) to other nodes which are located at the distance D from them. D should not be too big, 4 is enough for it.
+7) execute the algorithm of a sentiment propagation which propagates sentiment scores from seed nodes (which are positive and negative emoticons) to other nodes which are located at the distance D from them. D should not be too big, 4 is enough for it.
 
-On the stage of sentiment analysis the scores of all words in the tweet are summed according to the built sentiment lexicon, and if the result is close to zero the tweet is considered to be neutral; if it is more than zero, then the tweet is considered to have a positive sentiment; if the tweet is less than zero, then the tweet is negative. 
+On the stage of a sentiment analysis the scores of all words in the tweet are summed according to the built sentiment lexicon, and if the result is close to zero the tweet is considered to be neutral; if it is more than zero, then the tweet is considered to have a positive sentiment; if the tweet is less than zero, then the tweet is negative. 
 
 For better understanding the concepts of MapReduce programming I recommend you the book "Hadoop: The  definitive guide" of Tom White.
 
