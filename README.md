@@ -1,7 +1,7 @@
 SentAnalysisRep
 ===============
 
-Sentiment analysis of Twitter posts using MapReduce parallel programming model.  Based on the article of The Ohio university 
+Sentiment analysis of Twitter posts using MapReduce parallel programming model.  Based on the article of The Ohio university
 researchers V.N. Khuc, C. Shivade, R. Ramnath, J.Ramathan.
 
 The program has two components - lexicon builder and sentiment analyser. Using MapReduce these two components can be run on 
@@ -9,7 +9,6 @@ computer clusters and grids and scaled according to the size of input data and n
 
 To build a sentiment lexicon we do next steps:
 1) retrieve from the web the training tweets which contain positive and negative emoticons.
-
 2) execute the normalization of tweets: convert all words to lowercase and transform all triples of identical symbols to deuces.
 So the words like "Goooooddddd" and "goooodd" will be represented by one word "goodd".
 3) use Twitter POS Tagger (http://www.ark.cs.cmu.edu/TweetNLP) to retieve from training tweets only nouns, adjectives, verbs,
