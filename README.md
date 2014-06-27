@@ -8,7 +8,9 @@ The program has two components - lexicon builder and sentiment analyser. Using M
 computer clusters and grids and scaled according to the size of input data and number of machines in a cluster.
 
 To build a sentiment lexicon we do next steps:
+
 1) retrieve from the web the training tweets which contain positive and negative emoticons.
+
 2) execute the normalization of tweets: convert all words to lowercase and transform all triples of identical symbols to deuces.
 So the words like "Goooooddddd" and "goooodd" will be represented by one word "goodd".
 3) use Twitter POS Tagger (http://www.ark.cs.cmu.edu/TweetNLP) to retieve from training tweets only nouns, adjectives, verbs,
