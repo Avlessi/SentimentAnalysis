@@ -1,4 +1,4 @@
-SentAnalysisRep
+SentimentAnalysis
 ===============
 
 The program perfoms a sentiment analysis of Twitter posts using MapReduce parallel programming model. It is based on the article of The Ohio university researchers V.N. Khuc, C. Shivade, R. Ramnath, J.Ramathan.
